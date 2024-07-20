@@ -8,7 +8,10 @@ const __dirname = dirname(__filename);
 
 const app = express();
 const port = 3000;
-app.get('/', (req, res) => res.sendFile(__dirname + '/index.html'));
+const app = express();
+app.get('/', (req, res) => res.sendFile(__dirname + '/allou.html'));
+app.get('/allou', (req, res) => res.sendFile(__dirname + '/allou.html'));
+app.get('/aziz', (req, res) => res.sendFile(__dirname + '/aziz.html'));
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
